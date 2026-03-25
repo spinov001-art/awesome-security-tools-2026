@@ -4,184 +4,230 @@
 [![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-brightgreen)](https://github.com/spinov001-art/awesome-security-tools-2026)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/spinov001-art/awesome-security-tools-2026/pulls)
 
-> A curated list of 100+ cybersecurity tools for penetration testers, bug bounty hunters, security engineers, and DevSecOps professionals in 2026.
+> A curated list of 150+ cybersecurity tools, frameworks, and resources for 2026.
 
 ## Contents
 
-- [Vulnerability Scanners](#vulnerability-scanners)
+- [Penetration Testing](#penetration-testing)
+- [Vulnerability Scanning](#vulnerability-scanning)
 - [Network Security](#network-security)
 - [Web Application Security](#web-application-security)
-- [SAST & DAST](#sast--dast)
-- [Container Security](#container-security)
+- [SIEM and Log Management](#siem-and-log-management)
+- [Threat Intelligence](#threat-intelligence)
+- [Forensics and Incident Response](#forensics-and-incident-response)
 - [Cloud Security](#cloud-security)
-- [Secret Detection](#secret-detection)
-- [Reconnaissance](#reconnaissance)
-- [Exploitation Frameworks](#exploitation-frameworks)
-- [Password & Credential Tools](#password--credential-tools)
-- [Forensics & Incident Response](#forensics--incident-response)
+- [Container Security](#container-security)
+- [API Security](#api-security)
+- [Password and Credential Tools](#password-and-credential-tools)
+- [Encryption and Privacy](#encryption-and-privacy)
 - [OSINT](#osint)
 - [Malware Analysis](#malware-analysis)
-- [Bug Bounty Platforms](#bug-bounty-platforms)
+- [Red Team and Blue Team](#red-team-and-blue-team)
+- [Security Automation](#security-automation)
 - [Learning Resources](#learning-resources)
 
 ---
 
-## Vulnerability Scanners
+## Penetration Testing
 
-- [Nuclei](https://github.com/projectdiscovery/nuclei) — Fast, template-based vulnerability scanner. 22K+ stars
-- [Nmap](https://nmap.org) — The gold standard network scanner and security auditor
-- [OpenVAS](https://www.openvas.org) — Full-featured open-source vulnerability assessment system
-- [Nikto](https://github.com/sullo/nikto) — Web server scanner for dangerous files and misconfigurations
-- [Trivy](https://github.com/aquasecurity/trivy) — All-in-one security scanner (containers, IaC, repos). 24K+ stars
-- [Wapiti](https://wapiti-scanner.github.io) — Web application vulnerability scanner
-- [Vuls](https://github.com/future-architect/vuls) — Agent-less vulnerability scanner for Linux/FreeBSD
-- [Tsunami](https://github.com/google/tsunami-security-scanner) — General-purpose network security scanner by Google
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Metasploit](https://github.com/rapid7/metasploit-framework) | Most used penetration testing framework | 34K+ |
+| [Burp Suite](https://portswigger.net/burp) | Web vulnerability scanner and proxy | - |
+| [sqlmap](https://github.com/sqlmapproject/sqlmap) | Automatic SQL injection tool | 32K+ |
+| [Nmap](https://github.com/nmap/nmap) | Network discovery and security auditing | 10K+ |
+| [Nuclei](https://github.com/projectdiscovery/nuclei) | Fast vulnerability scanner with templates | 21K+ |
+| [Gobuster](https://github.com/OJ/gobuster) | Directory/file and DNS busting tool | 10K+ |
+| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer | 13K+ |
+| [Hydra](https://github.com/vanhauser-thc/thc-hydra) | Network login cracker | 10K+ |
+| [Amass](https://github.com/owasp-amass/amass) | Attack surface discovery | 12K+ |
+| [Subfinder](https://github.com/projectdiscovery/subfinder) | Fast subdomain discovery | 10K+ |
+| [httpx](https://github.com/projectdiscovery/httpx) | Fast HTTP probing toolkit | 7K+ |
+| [Nikto](https://github.com/sullo/nikto) | Web server scanner | 8K+ |
+
+## Vulnerability Scanning
+
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Trivy](https://github.com/aquasecurity/trivy) | Comprehensive vulnerability scanner | 24K+ |
+| [OpenVAS](https://github.com/greenbone/openvas-scanner) | Open-source vulnerability scanner | 3K+ |
+| [Grype](https://github.com/anchore/grype) | Container image vulnerability scanner | 9K+ |
+| [Semgrep](https://github.com/semgrep/semgrep) | Lightweight static analysis | 10K+ |
+| [Bandit](https://github.com/PyCQA/bandit) | Python security linter | 6K+ |
+| [Checkov](https://github.com/bridgecrewio/checkov) | IaC security scanner | 7K+ |
+| [Nessus](https://www.tenable.com/products/nessus) | Professional vulnerability scanner | - |
+| [Snyk](https://snyk.io/) | Developer security platform | - |
 
 ## Network Security
 
-- [Wireshark](https://www.wireshark.org) — World's foremost network protocol analyzer
-- [Suricata](https://suricata.io) — High-performance network IDS, IPS, and security monitoring
-- [Zeek](https://zeek.org) — Powerful network analysis framework (formerly Bro)
-- [Snort](https://www.snort.org) — Open-source intrusion detection/prevention system
-- [Scapy](https://scapy.net) — Python-based packet manipulation library
-- [Masscan](https://github.com/robertdavidgraham/masscan) — Internet-scale port scanner (10M packets/sec)
-- [Zmap](https://zmap.io) — Fast single-packet network scanner
-- [Netcat](https://nmap.org/ncat/) — Versatile networking utility (the Swiss Army knife of networking)
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Wireshark](https://www.wireshark.org/) | Network protocol analyzer | - |
+| [Suricata](https://github.com/OISF/suricata) | Network IDS/IPS engine | 5K+ |
+| [Zeek](https://github.com/zeek/zeek) | Network traffic analyzer | 6K+ |
+| [Fail2Ban](https://github.com/fail2ban/fail2ban) | IP banning on failures | 12K+ |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Collaborative behavior detection | 9K+ |
+| [Scapy](https://github.com/secdev/scapy) | Packet manipulation library | 10K+ |
+| [Masscan](https://github.com/robertdavidgraham/masscan) | Fastest TCP port scanner | 23K+ |
+| [Snort](https://github.com/snort3/snort3) | Network intrusion detection | 2K+ |
 
 ## Web Application Security
 
-- [Burp Suite](https://portswigger.net/burp) — Industry-standard web vulnerability scanner (Community edition free)
-- [OWASP ZAP](https://www.zaproxy.org) — Free web application security scanner
-- [SQLMap](https://sqlmap.org) — Automatic SQL injection and database takeover tool
-- [ffuf](https://github.com/ffuf/ffuf) — Fast web fuzzer written in Go. 13K+ stars
-- [Wfuzz](https://github.com/xmendez/wfuzz) — Web application fuzzer
-- [Dirsearch](https://github.com/maurosoria/dirsearch) — Web path discovery tool
-- [Gobuster](https://github.com/OJ/gobuster) — Directory/file & DNS busting tool in Go
-- [httpx](https://github.com/projectdiscovery/httpx) — Fast multi-purpose HTTP toolkit. 8K+ stars
-- [Katana](https://github.com/projectdiscovery/katana) — Next-gen crawling and spidering framework
+| Tool | Description | Stars |
+|------|------------|-------|
+| [OWASP ZAP](https://github.com/zaproxy/zaproxy) | Web app security scanner | 13K+ |
+| [WPScan](https://github.com/wpscanteam/wpscan) | WordPress security scanner | 9K+ |
+| [XSStrike](https://github.com/s0md3v/XSStrike) | XSS detection suite | 13K+ |
+| [Dalfox](https://github.com/hahwul/dalfox) | XSS analysis framework | 4K+ |
+| [Commix](https://github.com/commixproject/commix) | Command injection exploiter | 5K+ |
+| [Wappalyzer](https://github.com/wappalyzer/wappalyzer) | Technology profiler | 11K+ |
 
-## SAST & DAST
+## SIEM and Log Management
 
-- [Semgrep](https://semgrep.dev) — Lightweight static analysis for many languages. 11K+ stars
-- [SonarQube](https://www.sonarqube.org) — Continuous code quality and security inspection
-- [Bandit](https://github.com/PyCQA/bandit) — Security linter for Python code
-- [Brakeman](https://brakemanscanner.org) — Static analysis for Ruby on Rails security
-- [CodeQL](https://codeql.github.com) — GitHub's semantic code analysis engine
-- [Bearer](https://github.com/Bearer/bearer) — Code security scanning for data flows
-- [Snyk Code](https://snyk.io/product/snyk-code/) — Real-time static analysis powered by AI
-- [Checkov](https://github.com/bridgecrewio/checkov) — Static analysis for IaC security
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Wazuh](https://github.com/wazuh/wazuh) | Open-source security platform | 11K+ |
+| [Elastic Security](https://github.com/elastic/elasticsearch) | SIEM on Elasticsearch | 70K+ |
+| [Grafana Loki](https://github.com/grafana/loki) | Log aggregation | 24K+ |
+| [Graylog](https://github.com/Graylog2/graylog2-server) | Log management | 7K+ |
+| [TheHive](https://github.com/TheHive-Project/TheHive) | Incident response platform | 3K+ |
+| [OSSEC](https://github.com/ossec/ossec-hids) | Host-based intrusion detection | 4K+ |
 
-## Container Security
+## Threat Intelligence
 
-- [Trivy](https://github.com/aquasecurity/trivy) — Comprehensive container/image scanner
-- [Grype](https://github.com/anchore/grype) — Vulnerability scanner for container images
-- [Falco](https://falco.org) — Cloud-native runtime security (CNCF project)
-- [Clair](https://github.com/quay/clair) — Static analysis of vulnerabilities in containers
-- [Docker Bench](https://github.com/docker/docker-bench-security) — Docker security best practices checker
-- [Kubescape](https://github.com/kubescape/kubescape) — Kubernetes security platform. 10K+ stars
-- [kube-hunter](https://github.com/aquasecurity/kube-hunter) — Hunt for security weaknesses in Kubernetes
+| Tool | Description | Stars |
+|------|------------|-------|
+| [MISP](https://github.com/MISP/MISP) | Threat intelligence sharing | 5K+ |
+| [OpenCTI](https://github.com/OpenCTI-Platform/opencti) | Cyber threat intelligence platform | 6K+ |
+| [Shodan](https://www.shodan.io/) | Internet device search engine | - |
+| [VirusTotal](https://www.virustotal.com/) | File/URL analysis | - |
+| [GreyNoise](https://www.greynoise.io/) | Internet noise analysis | - |
+| [AbuseIPDB](https://www.abuseipdb.com/) | IP abuse reporting | - |
+
+## Forensics and Incident Response
+
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Volatility](https://github.com/volatilityfoundation/volatility3) | Memory forensics | 2K+ |
+| [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Reverse engineering by NSA | 52K+ |
+| [Autopsy](https://github.com/sleuthkit/autopsy) | Digital forensics platform | 3K+ |
+| [Velociraptor](https://github.com/Velocidex/velociraptor) | Endpoint forensics | 3K+ |
+| [GRR](https://github.com/google/grr) | Remote forensics by Google | 5K+ |
+| [Chainsaw](https://github.com/WithSecureLabs/chainsaw) | Windows event log analysis | 3K+ |
 
 ## Cloud Security
 
-- [Prowler](https://github.com/prowler-cloud/prowler) — AWS/Azure/GCP security assessment tool. 11K+ stars
-- [ScoutSuite](https://github.com/nccgroup/ScoutSuite) — Multi-cloud security auditing tool
-- [CloudSploit](https://github.com/aquasecurity/cloudsploit) — Cloud security configuration monitoring
-- [Steampipe](https://steampipe.io) — Query cloud infrastructure with SQL
-- [Cartography](https://github.com/lyft/cartography) — Infrastructure attack surface mapping
-- [Pacu](https://github.com/RhinoSecurityLabs/pacu) — AWS exploitation framework
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Prowler](https://github.com/prowler-cloud/prowler) | AWS/Azure/GCP security assessments | 11K+ |
+| [ScoutSuite](https://github.com/nccgroup/ScoutSuite) | Multi-cloud security auditing | 6K+ |
+| [Steampipe](https://github.com/turbot/steampipe) | Query cloud APIs with SQL | 7K+ |
+| [CloudMapper](https://github.com/duo-labs/cloudmapper) | AWS visualization | 6K+ |
+| [Cartography](https://github.com/lyft/cartography) | Infrastructure mapping | 3K+ |
 
-## Secret Detection
+## Container Security
 
-- [TruffleHog](https://github.com/trufflesecurity/trufflehog) — Find leaked credentials in git repos. 17K+ stars
-- [GitLeaks](https://github.com/gitleaks/gitleaks) — SAST tool for detecting secrets in git. 18K+ stars
-- [detect-secrets](https://github.com/Yelp/detect-secrets) — Enterprise-friendly secrets detection by Yelp
-- [SpectralOps](https://spectralops.io) — Monitors for exposed secrets, tokens, and credentials
-- [git-secrets](https://github.com/awslabs/git-secrets) — Prevents committing secrets to git (by AWS)
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Falco](https://github.com/falcosecurity/falco) | Runtime container security | 7K+ |
+| [Kube-bench](https://github.com/aquasecurity/kube-bench) | CIS K8s benchmark | 7K+ |
+| [Kubescape](https://github.com/kubescape/kubescape) | K8s security platform | 10K+ |
+| [Docker Bench](https://github.com/docker/docker-bench-security) | Docker security checker | 9K+ |
+| [Kube-hunter](https://github.com/aquasecurity/kube-hunter) | K8s pen testing | 5K+ |
 
-## Reconnaissance
+## API Security
 
-- [Subfinder](https://github.com/projectdiscovery/subfinder) — Fast passive subdomain enumeration. 10K+ stars
-- [Amass](https://github.com/owasp-amass/amass) — In-depth attack surface mapping and asset discovery
-- [theHarvester](https://github.com/laramies/theHarvester) — E-mails, subdomains, and names harvester
-- [Shodan](https://www.shodan.io) — Search engine for Internet-connected devices
-- [Censys](https://censys.io) — Internet-wide scanning platform
-- [Recon-ng](https://github.com/lanmaster53/recon-ng) — Full-featured web reconnaissance framework
-- [dnsrecon](https://github.com/darkoperator/dnsrecon) — DNS enumeration and reconnaissance
+| Tool | Description | Stars |
+|------|------------|-------|
+| [RESTler](https://github.com/microsoft/restler-fuzzer) | API fuzzer by Microsoft | 3K+ |
+| [Akto](https://github.com/akto-api-security/akto) | API security testing | 2K+ |
+| [OWASP API Security](https://owasp.org/API-Security/) | API top 10 risks | - |
 
-## Exploitation Frameworks
+## Password and Credential Tools
 
-- [Metasploit](https://www.metasploit.com) — The world's most used penetration testing framework
-- [Cobalt Strike](https://www.cobaltstrike.com) — Adversary simulation and red team operations (commercial)
-- [Empire](https://github.com/BC-SECURITY/Empire) — Post-exploitation PowerShell/Python/C# agent
-- [Sliver](https://github.com/BishopFox/sliver) — Open-source adversary emulation framework. 9K+ stars
-- [Covenant](https://github.com/cobbr/Covenant) — .NET-based C2 framework
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Hashcat](https://github.com/hashcat/hashcat) | Advanced password recovery | 21K+ |
+| [John the Ripper](https://github.com/openwall/john) | Password cracker | 10K+ |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Find leaked credentials | 16K+ |
+| [GitLeaks](https://github.com/gitleaks/gitleaks) | Detect secrets in code | 18K+ |
+| [SOPS](https://github.com/getsops/sops) | Secrets management | 17K+ |
+| [Vault](https://github.com/hashicorp/vault) | Secret management | 31K+ |
 
-## Password & Credential Tools
+## Encryption and Privacy
 
-- [Hashcat](https://hashcat.net) — World's fastest password recovery utility
-- [John the Ripper](https://www.openwall.com/john/) — Open-source password security auditing
-- [Hydra](https://github.com/vanhauser-thc/thc-hydra) — Fast online password cracking tool
-- [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) — Swiss army knife for pentesting networks
-- [Mimikatz](https://github.com/gentilkiwi/mimikatz) — Windows credential extraction tool
-
-## Forensics & Incident Response
-
-- [Volatility](https://github.com/volatilityfoundation/volatility3) — Memory forensics framework
-- [Velociraptor](https://github.com/Velocidex/velociraptor) — Endpoint visibility and collection tool
-- [TheHive](https://thehive-project.org) — Security incident response platform
-- [GRR](https://github.com/google/grr) — Remote live forensics for incident response (Google)
-- [YARA](https://github.com/VirusTotal/yara) — Pattern matching for malware researchers
-- [Autopsy](https://www.autopsy.com) — Digital forensics platform
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Age](https://github.com/FiloSottile/age) | Simple file encryption | 17K+ |
+| [WireGuard](https://github.com/WireGuard/wireguard-linux) | Modern VPN protocol | 3K+ |
+| [CertBot](https://github.com/certbot/certbot) | Automatic HTTPS certs | 31K+ |
 
 ## OSINT
 
-- [Maltego](https://www.maltego.com) — Open-source intelligence and graphical link analysis
-- [SpiderFoot](https://github.com/smicallef/spiderfoot) — Automates OSINT collection. 13K+ stars
-- [Sherlock](https://github.com/sherlock-project/sherlock) — Hunt usernames across social networks. 60K+ stars
-- [Photon](https://github.com/s0md3v/Photon) — Incredibly fast web crawler for OSINT
-- [Holehe](https://github.com/megadose/holehe) — Check if an email is used on different sites
-- [Maigret](https://github.com/soxoj/maigret) — Collect dossier on a person by username
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Sherlock](https://github.com/sherlock-project/sherlock) | Username search across platforms | 60K+ |
+| [SpiderFoot](https://github.com/smicallef/spiderfoot) | OSINT automation | 13K+ |
+| [theHarvester](https://github.com/laramies/theHarvester) | Email/domain finder | 12K+ |
+| [Photon](https://github.com/s0md3v/Photon) | Fast web crawler for OSINT | 11K+ |
+| [Holehe](https://github.com/megadose/holehe) | Email usage checker | 7K+ |
+| [Recon-ng](https://github.com/lanmaster53/recon-ng) | Web recon framework | 4K+ |
 
 ## Malware Analysis
 
-- [Ghidra](https://ghidra-sre.org) — NSA's software reverse engineering framework
-- [Cuckoo Sandbox](https://cuckoosandbox.org) — Automated malware analysis system
-- [FLARE VM](https://github.com/mandiant/flare-vm) — Windows-based malware analysis distribution
-- [REMnux](https://remnux.org) — Linux toolkit for reverse-engineering malware
-- [Any.Run](https://any.run) — Interactive malware analysis service
-- [VirusTotal](https://www.virustotal.com) — Analyze suspicious files, URLs, and domains
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Reverse engineering (NSA) | 52K+ |
+| [Radare2](https://github.com/radareorg/radare2) | RE framework | 20K+ |
+| [YARA](https://github.com/VirusTotal/yara) | Pattern matching for malware | 8K+ |
+| [Cuckoo Sandbox](https://github.com/cuckoosandbox/cuckoo) | Automated malware analysis | 6K+ |
+| [FLOSS](https://github.com/mandiant/flare-floss) | Extract strings from malware | 3K+ |
 
-## Bug Bounty Platforms
+## Red Team and Blue Team
 
-- [HackerOne](https://www.hackerone.com) — World's largest ethical hacker community
-- [Bugcrowd](https://www.bugcrowd.com) — Bug bounty and vulnerability disclosure platform
-- [Intigriti](https://www.intigriti.com) — European bug bounty platform
-- [Synack](https://www.synack.com) — Premier security testing platform
-- [YesWeHack](https://www.yeswehack.com) — Global bug bounty and VDP platform
+| Tool | Description | Stars |
+|------|------------|-------|
+| [Sliver](https://github.com/BishopFox/sliver) | Open-source adversary emulation | 8K+ |
+| [Caldera](https://github.com/mitre/caldera) | MITRE adversary emulation | 5K+ |
+| [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) | ATT&CK test library | 10K+ |
+| [BloodHound](https://github.com/BloodHoundAD/BloodHound) | AD attack paths | 10K+ |
+| [Sigma](https://github.com/SigmaHQ/sigma) | Generic SIEM rules | 8K+ |
+
+## Security Automation
+
+| Tool | Description | Stars |
+|------|------------|-------|
+| [DefectDojo](https://github.com/DefectDojo/django-DefectDojo) | Vulnerability management | 4K+ |
+| [Shuffle](https://github.com/Shuffle/Shuffle) | SOAR platform | 3K+ |
+| [n8n](https://github.com/n8n-io/n8n) | Workflow automation | 50K+ |
 
 ## Learning Resources
 
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — Free web security training
-- [HackTheBox](https://www.hackthebox.com) — Cybersecurity training platform
-- [TryHackMe](https://tryhackme.com) — Learn cybersecurity with hands-on labs
-- [PentesterLab](https://pentesterlab.com) — Learn web penetration testing
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — Top 10 web application security risks
-- [CyberDefenders](https://cyberdefenders.org) — Blue team training platform
+- [HackTheBox](https://www.hackthebox.com/) - Hands-on cybersecurity training
+- [TryHackMe](https://tryhackme.com/) - Guided cybersecurity labs
+- [PortSwigger Academy](https://portswigger.net/web-security) - Free web security training
+- [OWASP](https://owasp.org/) - Web security community
+- [PentesterLab](https://pentesterlab.com/) - Web hacking exercises
 
 ---
 
 ## Related Awesome Lists
 
-- [Awesome MCP Tools 2026](https://github.com/spinov001-art/awesome-mcp-tools-2026) — 130+ Model Context Protocol tools
-- [Awesome Web Scraping 2026](https://github.com/spinov001-art/awesome-web-scraping-2026) — 150+ web scraping tools
-- [Awesome AI Tools 2026](https://github.com/spinov001-art/awesome-ai-tools-2026) — 150+ AI/ML tools
-- [Awesome DevOps Tools 2026](https://github.com/spinov001-art/awesome-devops-tools-2026) — 120+ DevOps tools
-- [Awesome Automation Tools 2026](https://github.com/spinov001-art/awesome-automation-tools-2026) — 130+ automation tools
+- [Awesome Web Scraping 2026](https://github.com/spinov001-art/awesome-web-scraping-2026) - 150+ scraping tools
+- [Awesome MCP Tools 2026](https://github.com/spinov001-art/awesome-mcp-tools-2026) - 130+ MCP servers
+- [Awesome AI Tools 2026](https://github.com/spinov001-art/awesome-ai-tools-2026) - 150+ AI tools
+- [Awesome DevOps Tools 2026](https://github.com/spinov001-art/awesome-devops-tools-2026) - 120+ DevOps tools
+- [Awesome API Tools 2026](https://github.com/spinov001-art/awesome-api-tools-2026) - 120+ API tools
+- [Awesome Automation Tools 2026](https://github.com/spinov001-art/awesome-automation-tools-2026) - 130+ automation tools
+- [Awesome CLI Tools 2026](https://github.com/spinov001-art/awesome-cli-tools-2026) - 50+ CLI tools
+- [Awesome Python DevTools 2026](https://github.com/spinov001-art/awesome-python-devtools-2026) - 80+ Python tools
 
-## Contributing
+---
 
-Contributions welcome! Open a PR if you know a security tool not listed here.
+**Need security consulting?** [Hire me](https://spinov001-art.github.io) | Email: Spinov001@gmail.com
 
 ## License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+MIT
+
+Star this repo if you find it useful!
