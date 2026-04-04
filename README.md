@@ -224,7 +224,7 @@
 
 ---
 
-**Need security consulting?** [Hire me](https://spinov001-art.github.io) | Email: Spinov001@gmail.com
+**Need security consulting?** email **spinov001@gmail.com** — free quote in 2 hours | Email: Spinov001@gmail.com
 
 ## License
 
