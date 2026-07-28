@@ -43,6 +43,7 @@
 | [Amass](https://github.com/owasp-amass/amass) | Attack surface discovery | 12K+ |
 | [Subfinder](https://github.com/projectdiscovery/subfinder) | Fast subdomain discovery | 10K+ |
 | [httpx](https://github.com/projectdiscovery/httpx) | Fast HTTP probing toolkit | 7K+ |
+| [Darkmoon](https://github.com/ASCIT31/Dark-Moon) | Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes | - |
 | [Nikto](https://github.com/sullo/nikto) | Web server scanner | 8K+ |
 
 ## Vulnerability Scanning
