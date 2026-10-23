@@ -102,6 +102,7 @@
 | [Shodan](https://www.shodan.io/) | Internet device search engine | - |
 | [VirusTotal](https://www.virustotal.com/) | File/URL analysis | - |
 | [GreyNoise](https://www.greynoise.io/) | Internet noise analysis | - |
+| [ICHI — Internet Cyber Health Index](https://ichi.global/) | Daily barometer of internet cyber health; source-transparent aggregation across threat intel, CVE, and network telemetry signals | - |
 | [AbuseIPDB](https://www.abuseipdb.com/) | IP abuse reporting | - |
 
 ## Forensics and Incident Response
