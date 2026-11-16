@@ -56,6 +56,7 @@
 | [Bandit](https://github.com/PyCQA/bandit) | Python security linter | 6K+ |
 | [Checkov](https://github.com/bridgecrewio/checkov) | IaC security scanner | 7K+ |
 | [Nessus](https://www.tenable.com/products/nessus) | Professional vulnerability scanner | - |
+| [Openness](https://github.com/s4e-io/openness) | Open source agentless credentialed vulnerability scanner for Linux and Windows servers | - |
 | [Snyk](https://snyk.io/) | Developer security platform | - |
 
 ## Network Security
