@@ -87,6 +87,7 @@
 | Tool | Description | Stars |
 |------|------------|-------|
 | [Wazuh](https://github.com/wazuh/wazuh) | Open-source security platform | 11K+ |
+| [Wazuh Alert Manager](https://github.com/xrisbarney/Wazuh-alert-manager) | Alert triage and case management plugin for the Wazuh dashboard | - |
 | [Elastic Security](https://github.com/elastic/elasticsearch) | SIEM on Elasticsearch | 70K+ |
 | [Grafana Loki](https://github.com/grafana/loki) | Log aggregation | 24K+ |
 | [Graylog](https://github.com/Graylog2/graylog2-server) | Log management | 7K+ |
